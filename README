@@ -1,0 +1,38 @@
+PREREQUISITE
+-----------
+
+terraform version -- Terraform v1.0.6
+
+create u r own sshkey copy the idrsa.pb key into folder scripts file web.pub  -- /scripts/web.pub
+
+configure awscli i have used region us-east-1 
+
+terraform init -- will intilaise terraform plugin and configure s3 backend 
+
+i have uesd terraform workspace to craete the iac in dev environment to use as it is run followin commands 
+
+terraform workspace new dev
+
+to switch into dev workspace
+
+terrafrom workspace select dev
+
+to verify run  command
+
+terraform workspace show
+
+to run test of u r scripts run validate
+
+terraform valiadte 
+
+to see the exection of iac run plan
+
+terraform plan
+
+to apply iac 
+
+terraform apply -auto-approve
+
+TOTALLY IT WILL CREATE 29 RESOURCES
+
+
